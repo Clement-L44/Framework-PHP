@@ -20,7 +20,7 @@
 
         private function __construct($datasource)
         {
-            $this->_bdd = new PDO('mysql:dbname='.$datasource->dbname.';host='.$datasource->host,$datasource->user, $datasource->password);
+            $this->_bdd = new PDO('mysql:host='.$datasource->host.';dbname='.$datasource->dbname.';charset=utf8',$datasource->user, $datasource->password);
         }
 
     }

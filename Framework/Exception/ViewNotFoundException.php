@@ -6,6 +6,11 @@
         {
             parent::__construct($message, "0003");
         }
+
+        public function getMoreDetail()
+		{
+			return "View has not been found with route";
+		}
     }
 
 ?>
